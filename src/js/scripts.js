@@ -2,6 +2,8 @@
 // Scripts
 // 
 
+import { save } from './firebase.js'
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -57,11 +59,22 @@ const form = document.getElementById('quiero_ayudar');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = form['name']
-    const email = form['email']
-    const phone = form['phone']
-    const description = form['description']
+    const name = document.getElementById('name')
+    const email = document.getElementById('email')
+    const phone = document.getElementById('phone')
+    const description = document.getElementById('description')
 
-    const button = document.getElementById('submitButton')
-    console.log("Probando");
+    const inscription = {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        whois: description.value
+    }
+
+    save(inscription)
+
+    name.value = ""
+    email.value = ""
+    phone.value = ""
+    description.value = ""
 });

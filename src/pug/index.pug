@@ -15,14 +15,13 @@ html(lang='en')
         link(rel='apple-touch-icon', sizes='180x180' href='assets/apple-touch-icon.png')
         link(rel='icon' type='image/png', sizes='32x32' href='assets/favicon-32x32.png')
         link(rel='icon' type='image/png', sizes='16x16' href='assets/favicon-16x16.png')
-        link(rel='manifest', href='/site.webmanifest')
 
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+        //- link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+        //- link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
 
         // SimpleLightbox plugin CSS
         link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
@@ -105,84 +104,84 @@ html(lang='en')
         // Quiero Ayudar
         section#quiero_ayudar.page-section
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.justify-content-center
-                    h3.text-center Si quieres participar y/o ayudarnos, mandanos un mensaje y/o siguenos en nuestras redes sociales
                 //- .row.gx-4.gx-lg-5.justify-content-center
-                //-     .col-lg-8.col-xl-6.text-center
-                //-         h2.mt-0 ¡Quiero sumar mi mano!
-                //-         hr.divider
-                //-         p.text-muted.mb-5
-                //-             | Es muy importante que nos cuentes quien sos, si estas estudiando, trabajando y en que proyecto te gustaría trabajar!
-                //- .row.gx-4.gx-lg-5.justify-content-center.mb-5
-                //-     .col-lg-6
-                //-         form#quiero_ayudar
-                //-             // Name input
-                //-             .form-floating.mb-3
-                //-                 input#name.form-control(
-                //-                     type='text',
-                //-                     placeholder='Enter your name...',
-                //-                     data-sb-validations='required'
-                //-                 )
-                //-                 label(for='name') Nombre completo
-                //-                 .invalid-feedback(data-sb-feedback='name:required')
-                //-                     | El nombre es requerido.
+                //-     h3.text-center Si quieres participar y/o ayudarnos, mandanos un mensaje y/o siguenos en nuestras redes sociales
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-8.col-xl-6.text-center
+                        h2.mt-0 ¡Quiero sumar mi mano!
+                        hr.divider
+                        p.text-muted.mb-5
+                            | Es muy importante que nos cuentes quien sos, si estas estudiando, trabajando y en que proyecto te gustaría trabajar!
+                .row.gx-4.gx-lg-5.justify-content-center.mb-5
+                    .col-lg-6
+                        form#quiero_ayudar
+                            // Name input
+                            .form-floating.mb-3
+                                input#name.form-control(
+                                    type='text',
+                                    placeholder='Enter your name...',
+                                    data-sb-validations='required'
+                                )
+                                label(for='name') Nombre completo
+                                .invalid-feedback(data-sb-feedback='name:required')
+                                    | El nombre es requerido.
 
-                //-             // Email address input
-                //-             .form-floating.mb-3
-                //-                 input#email.form-control(
-                //-                     type='email',
-                //-                     placeholder='name@example.com',
-                //-                     data-sb-validations='required,email'
-                //-                 )
-                //-                 label(for='email') Correo electrónico
-                //-                 .invalid-feedback(data-sb-feedback='email:required')
-                //-                     | El correo es requerido.
-                //-                 .invalid-feedback(data-sb-feedback='email:email')
-                //-                     | Correo no válido.
+                            // Email address input
+                            .form-floating.mb-3
+                                input#email.form-control(
+                                    type='email',
+                                    placeholder='name@example.com',
+                                    data-sb-validations='required,email'
+                                )
+                                label(for='email') Correo electrónico
+                                .invalid-feedback(data-sb-feedback='email:required')
+                                    | El correo es requerido.
+                                .invalid-feedback(data-sb-feedback='email:email')
+                                    | Correo no válido.
 
-                //-             // Phone number input
-                //-             .form-floating.mb-3
-                //-                 input#phone.form-control(
-                //-                     type='tel',
-                //-                     placeholder='(123) 456-7890',
-                //-                     data-sb-validations='required'
-                //-                 )
-                //-                 label(for='phone') Número de celular
-                //-                 .invalid-feedback(data-sb-feedback='phone:required')
-                //-                     | El número de celular es requerido.
+                            // Phone number input
+                            .form-floating.mb-3
+                                input#phone.form-control(
+                                    type='tel',
+                                    placeholder='(123) 456-7890',
+                                    data-sb-validations='required'
+                                )
+                                label(for='phone') Número de celular
+                                .invalid-feedback(data-sb-feedback='phone:required')
+                                    | El número de celular es requerido.
 
-                //-             // Message input
-                //-             .form-floating.mb-3
-                //-                 textarea#message.form-control(
-                //-                     type='text',
-                //-                     placeholder='Dinos cual es tu profesión, que estudias, trabajas?',
-                //-                     style='height: 10rem;',
-                //-                     data-sb-validations='required'
-                //-                 )
-                //-                 label(for='message') ¿Quién soy?
-                //-                 .invalid-feedback(data-sb-feedback='message:required')
-                //-                     | Decir quien sos es muy importante para nosotros, asi podremos agregarte a un proyecto.
+                            // Person description
+                            .form-floating.mb-3
+                                textarea#description.form-control(
+                                    type='text',
+                                    placeholder='Dinos cual es tu profesión, que estudias, trabajas?',
+                                    style='height: 10rem;',
+                                    data-sb-validations='required'
+                                )
+                                label(for='description') ¿Quién soy?
+                                .invalid-feedback(data-sb-feedback='description:required')
+                                    | Decir quien sos es muy importante para nosotros, asi podremos agregarte a un proyecto.
 
-                //-             // Submit success message
-                //-             //
-                //-             // This is what your users will see when the form
-                //-             // has successfully submitted
+                            // Submit success message
+                            //
+                            // This is what your users will see when the form
+                            // has successfully submitted
 
-                //-             #submitSuccessMessage.d-none
-                //-                 .text-center.mb-3
-                //-                     .fw-bolder Formulario enviado!
+                            #submitSuccessMessage.d-none
+                                .text-center.mb-3
+                                    .fw-bolder Formulario enviado!
 
-                //-             // Submit error message
-                //-             //
-                //-             // This is what your users will see when there is
-                //-             // an error submitting the form
+                            // Submit error message
+                            //
+                            // This is what your users will see when there is
+                            // an error submitting the form
 
-                //-             #submitErrorMessage.d-none
-                //-                 .text-center.text-danger.mb-3 Error al mandar formulario.
+                            #submitErrorMessage.d-none
+                                .text-center.text-danger.mb-3 Error al mandar formulario.
 
-                //-             // Submit Button
-                //-             .d-grid
-                //-                 button#submitButton.btn.btn-primary.btn-xl(type='submit') Enviar
+                            // Submit Button
+                            .d-grid
+                                button#submitButton.btn.btn-primary.btn-xl(type='submit') Enviar
 
             // Links Socialnet
             section
@@ -222,4 +221,4 @@ html(lang='en')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
 
         // Core theme JS
-        script(src='js/scripts.js')
+        script(type='module' src='js/scripts.js')
