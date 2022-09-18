@@ -1,0 +1,223 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Pagina del Manos a la Obra de Paraná, Entre Ríos, Argentina')
+        meta(name='author', content='Iván Ezequiel Iencinella')
+
+        title Manos a la Obra Paraná
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='apple-touch-icon', sizes='180x180' href='assets/apple-touch-icon.png')
+        link(rel='icon' type='image/png', sizes='32x32' href='assets/favicon-32x32.png')
+        link(rel='icon' type='image/png', sizes='16x16' href='assets/favicon-16x16.png')
+        link(rel='manifest', href='/site.webmanifest')
+
+        // Bootstrap Icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+
+        // SimpleLightbox plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='#page-top')
+                    img.logo(type='image/svg', src='assets/logo.svg', width='128px')
+                    | Manos a la Obra Paraná
+                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link(href='#sobre_nosotros') ¿Quienes somos?
+                        li.nav-item
+                            a.nav-link(href='#proyectos') Nuestros Proyectos
+                        li.nav-item
+                            a.nav-link(href='#quiero_ayudar') Suma tu mano!!!
+
+        // Masthead
+        header.masthead
+            .container.px-4.px-lg-5.h-100
+                .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
+                    .col-lg-8.align-self-end
+                        img(src="assets/img/mensaje_inicial.png", alt="Mensaje de bienvenida" width="99%")
+                        a.btn.btn-primary.btn-xl(href='#sobre_nosotros') Buscar más!!!
+
+        // Sobre Nosotros
+        section#sobre_nosotros.page-section.bg-primary
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-8.text-center
+                        h2.text-white.mt-0 ¿Qué es Manos a la Obra?
+                        p.text-white-75.mb-4
+                            | Es un proyecto solidario universitario
+                        hr.divider.divider-light
+                        h2.text-white.mt-0 ¿Cuál es nuestro objetivo?
+                        p.text-white-75.mb-4
+                            | Salir al encuentro de la realidad en la que vivimos, poniendo nuestros conocimientos y capacidades generados en el ámbito universitario al servicio de una determinada comunidad.
+                        hr.divider.divider-light
+                        h2.text-white.mt-0 ¿Quienes pueden participar?
+                        p.text-white-75.mb-4
+                            | Salir al encuentro de la realidad en la que vivimos, poniendo nuestros conocimientos y capacidades generados en el ámbito universitario al servicio de una determinada comunidad.
+                        a.btn.btn-light.btn-xl(href='#proyectos') ¿Quiero saber un poco más?
+
+        // Proyectos
+        section#proyectos.page-section
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Nuestros Proyectos
+                hr.divider
+                .row.gx-4.gx-lg-5
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-book.fs-1.text-primary
+                            h3.h4.mb-2 Educación
+                            p.text-muted.mb-0 Trabajamos con los niños y adolescentes para reforzar algunos conceptos aprendidos en clases.
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-heart.fs-1.text-primary
+                            h3.h4.mb-2 Salud
+                            p.text-muted.mb-0 Trabajamos con la comunidad para mejorar cuidados en la salud e higiene personal.
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                i.bi-house.fs-1.text-primary
+                            h3.h4.mb-2 Espiritualidad
+                            p.text-muted.mb-0 Reforzamos nuestro diálogo con Dios.
+                .col-lg-12.col-md-6.text-center
+                    a.btn.btn-primary.btn-xl(href='#quiero_ayudar') ¿Quiero ayudar?
+
+        // Quiero Ayudar
+        section#quiero_ayudar.page-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-8.col-xl-6.text-center
+                        h2.mt-0 ¡Quiero sumar mi mano!
+                        hr.divider
+                        p.text-muted.mb-5
+                            | Es muy importante que nos cuentes quien sos, si estas estudiando, trabajando y en que proyecto te gustaría trabajar!
+                .row.gx-4.gx-lg-5.justify-content-center.mb-5
+                    .col-lg-6
+                        form#quiero_ayudar
+                            // Name input
+                            .form-floating.mb-3
+                                input#name.form-control(
+                                    type='text',
+                                    placeholder='Enter your name...',
+                                    data-sb-validations='required'
+                                )
+                                label(for='name') Nombre completo
+                                .invalid-feedback(data-sb-feedback='name:required')
+                                    | El nombre es requerido.
+
+                            // Email address input
+                            .form-floating.mb-3
+                                input#email.form-control(
+                                    type='email',
+                                    placeholder='name@example.com',
+                                    data-sb-validations='required,email'
+                                )
+                                label(for='email') Correo electrónico
+                                .invalid-feedback(data-sb-feedback='email:required')
+                                    | El correo es requerido.
+                                .invalid-feedback(data-sb-feedback='email:email')
+                                    | Correo no válido.
+
+                            // Phone number input
+                            .form-floating.mb-3
+                                input#phone.form-control(
+                                    type='tel',
+                                    placeholder='(123) 456-7890',
+                                    data-sb-validations='required'
+                                )
+                                label(for='phone') Número de celular
+                                .invalid-feedback(data-sb-feedback='phone:required')
+                                    | El número de celular es requerido.
+
+                            // Message input
+                            .form-floating.mb-3
+                                textarea#message.form-control(
+                                    type='text',
+                                    placeholder='Dinos cual es tu profesión, que estudias, trabajas?',
+                                    style='height: 10rem;',
+                                    data-sb-validations='required'
+                                )
+                                label(for='message') ¿Quién soy?
+                                .invalid-feedback(data-sb-feedback='message:required')
+                                    | Decir quien sos es muy importante para nosotros, asi podremos agregarte a un proyecto.
+
+                            // Submit success message
+                            //
+                            // This is what your users will see when the form
+                            // has successfully submitted
+
+                            #submitSuccessMessage.d-none
+                                .text-center.mb-3
+                                    .fw-bolder Formulario enviado!
+
+                            // Submit error message
+                            //
+                            // This is what your users will see when there is
+                            // an error submitting the form
+
+                            #submitErrorMessage.d-none
+                                .text-center.text-danger.mb-3 Error al mandar formulario.
+
+                            // Submit Button
+                            .d-grid
+                                button#submitButton.btn.btn-primary.btn-xl(type='submit') Enviar
+
+            // Links Socialnet
+            section
+                .container
+                    .row
+                        .col-lg-4.col-md-6.text-center
+                            .mt-5
+                                .mb-2
+                                    a.btn.btn-primary.rounded-circle(href='https://www.instagram.com/manos_parana/', target='_blank')
+                                        i.bi.bi-instagram.fs-1.icon-xl
+                                    p Síguenos
+                                        i.bi.bi-person-check
+                        .col-lg-4.col-md-6.text-center
+                            .mt-5
+                                .mb-2
+                                    a.btn.btn-primary.rounded-circle(href='https://www.facebook.com/manosalaobrapna/', target='_blank')
+                                        i.bi.bi-facebook.fs-1.icon-xl
+                                    p Dale un "Me gusta"
+                                        i.bi.bi-hand-thumbs-up
+                        .col-lg-4.col-md-6.text-center
+                            .mt-5
+                                .mb-2
+                                    a.btn.btn-primary.rounded-circle(href='mailto:manosalaobra@gmail.com')
+                                        i.bi.bi-envelope.fs-1.icon-xl
+                                    p Envíar un correo
+
+        // Footer
+        footer.bg-light.py-5
+            .container.px-4.px-lg-5
+                .small.text-center.text-muted
+                    | Copyright &copy; 2022 - Piensa Sencillo por Iván Ezequiel Iencinella
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // SimpleLightbox plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
