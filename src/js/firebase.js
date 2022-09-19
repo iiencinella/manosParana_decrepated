@@ -23,6 +23,4 @@ const db = getFirestore();
 
 export const save = (ficha) => {
   addDoc(collection(db, 'inscription'), { ficha })
-  console.log(ficha)
-  console.log('Funciona!!!')
 }

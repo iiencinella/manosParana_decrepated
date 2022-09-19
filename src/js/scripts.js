@@ -3,6 +3,7 @@
 // 
 
 import { save } from './firebase.js'
+import { sendEmail } from './email.js'
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -63,6 +64,8 @@ form.addEventListener('submit', (e) => {
     const email = document.getElementById('email')
     const phone = document.getElementById('phone')
     const description = document.getElementById('description')
+    const messageSucces = document.getElementById('submitSuccessMessage')
+    const messageError = document.getElementById('submitErrorMessage')
 
     const inscription = {
         name: name.value,
@@ -71,10 +74,21 @@ form.addEventListener('submit', (e) => {
         whois: description.value
     }
 
-    save(inscription)
+    if(inscription.name != "" && inscription.email != "" && inscription.phone != "" && inscription.whois != "") {
+        save(inscription)
+        
+        if(messageSucces.classList.contains('d-none')) messageSucces.classList.remove('d-none')
+        if(!messageError.classList.contains('d-none')) messageError.classList.add('d-none')
+        
+        name.value = ""
+        email.value = ""
+        phone.value = ""
+        description.value = ""
 
-    name.value = ""
-    email.value = ""
-    phone.value = ""
-    description.value = ""
+        sendEmail(inscription)
+    }
+    else {
+        if(messageError.classList.contains('d-none')) messageError.classList.remove('d-none')
+        if(!messageSucces.classList.contains('d-none')) messageSucces.classList.add('d-none')
+    }
 });
