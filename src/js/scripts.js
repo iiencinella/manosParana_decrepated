@@ -91,4 +91,9 @@ form.addEventListener('submit', (e) => {
         if(messageError.classList.contains('d-none')) messageError.classList.remove('d-none')
         if(!messageSucces.classList.contains('d-none')) messageSucces.classList.add('d-none')
     }
+
+    setTimeout(() => {
+        if(!messageError.classList.contains('d-none')) messageError.classList.add('d-none')
+        if(!messageSucces.classList.contains('d-none')) messageSucces.classList.add('d-none')
+    }, 5000)
 });

@@ -1,17 +1,16 @@
 export const sendEmail = (inscription) => {
   const serviceID = 'service_jtht89i';
   const templateID = 'template_zbdmmij';
-  const publicKey = '0mu8cYBoPY6eRfSi8'
+  const publicKey = '2x0C3LS4oCHYmuG8S'
 
   emailjs.init(publicKey)
   
   let data = {
-    from_name: inscription.email,
-    to_name: "Ezequiel",
-    message: `${inscription.name},
-      ${inscription.email},
-      ${inscription.phone},
-      ${inscription.whois}`
+    to_name: "Manos a la Obra 🙌",
+    from_email: inscription.email,
+    from_name: inscription.name,
+    from_phone: inscription.phone,
+    from_description: inscription.whois
   }
   
   emailjs.send(serviceID, templateID, data)
