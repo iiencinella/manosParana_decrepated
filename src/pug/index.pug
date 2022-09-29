@@ -19,10 +19,6 @@ html(lang='en')
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
 
-        // Google fonts
-        //- link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
-        //- link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
-
         // SimpleLightbox plugin CSS
         link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
 
@@ -35,7 +31,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container.px-4.px-lg-5
                 a.navbar-brand(href='#page-top')
-                    img.logo(type='image/svg', src='assets/logo.svg', width='128px')
+                    img.logo(type='image/svg', src='assets/logo.svg', width='100px')
                     | Manos a la Obra Paraná
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
@@ -49,10 +45,10 @@ html(lang='en')
                             a.nav-link(href='#quiero_ayudar') Suma tu mano!!!
 
         // Masthead
-        header.masthead
+        header.masthead.h-100
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
-                    .col-lg-8.align-self-end
+                    .col-lg-8.align-self-mid
                         img(src="assets/img/mensaje_inicial.png", alt="Mensaje de bienvenida" width="99%")
                         a.btn.btn-primary.btn-xl(href='#sobre_nosotros') Buscar más!!!
 
@@ -63,15 +59,15 @@ html(lang='en')
                     .col-lg-8.text-center
                         h2.text-white.mt-0 ¿Qué es Manos a la Obra?
                         p.text-white-75.mb-4
-                            | Es un proyecto solidario universitario
+                            | Es un proyecto solidario impulsado por la Pastoral Universitaria que pretende generar una interación con personas que viven grandes desigualdades sociales, poniendo en práctica los conocimientos adquiridos en la Universidad.
                         hr.divider.divider-light
-                        h2.text-white.mt-0 ¿Cuál es nuestro objetivo?
+                        h2.text-white.mt-0 ¿Cómo trabajamos?
                         p.text-white-75.mb-4
-                            | Salir al encuentro de la realidad en la que vivimos, poniendo nuestros conocimientos y capacidades generados en el ámbito universitario al servicio de una determinada comunidad.
+                            | Mediante encuentros y visitas, conocemos el barrio, sus necesidades e inquietudes. Charlamos con los vecinos y creamos proyectos que solucionen alguna de las necesidades. Trabajamos durante todo el año para, finalmente, realizar una intervención intensiva en Enero. Trabajando en el barrio con los vecinos.
                         hr.divider.divider-light
                         h2.text-white.mt-0 ¿Quienes pueden participar?
                         p.text-white-75.mb-4
-                            | Salir al encuentro de la realidad en la que vivimos, poniendo nuestros conocimientos y capacidades generados en el ámbito universitario al servicio de una determinada comunidad.
+                            | Está dirigido a toda persona del ámbito universitario (estudiante, graduado, docente, profesionales) dispuesto a poner sus talentos al servicio de los demás.
                         a.btn.btn-light.btn-xl(href='#proyectos') ¿Quiero saber un poco más?
 
         // Proyectos

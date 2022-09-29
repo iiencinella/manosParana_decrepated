@@ -5,10 +5,19 @@
 @font-face {
     font-family: 'Berlin Sans FB Demi Bold';
     font-style: normal;
-    src: local('Berlin Sans FB Demi Bold'), url('assets/font/BRLNSDB.woff') format('woff');
+    src: local('Berlin Sans FB Demi Bold'), url('assets/font/Berlin_Sans/BRLNSDB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: local(Inter Tight), urL('assets/font/Inter_Tight/InterTight-ExtraBold.ttf') format('ttf');
 }
 
 $font-family-sans-serif: "Berlin Sans FB Demi Bold", "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-family-sans-serif-paragraph: "Inter Tight", "Merriweather Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
