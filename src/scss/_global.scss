@@ -47,12 +47,12 @@ p {
     visibility: hidden;
     position: absolute;
     bottom: 0;
-    left: 20%;
+    left: 15%;
     opacity: 0;
     content: attr(tool-tips);
     /* might also use attr(title) */
     height: auto;
-    min-width: 100px;
+    min-width: 150px;
     padding: 5px 8px;
     z-index: 999;
     color: #fff;
@@ -69,7 +69,7 @@ p {
     visibility: hidden;
     width: 0;
     height: 0;
-    left: 50%;
+    left: 35%;
     bottom: 0px;
     opacity: 0;
     content: "";
@@ -190,6 +190,11 @@ p {
     transition: all 0.2s ease-in-out;
 }
 
+// Estas clases las tengo que mejorar ya que estoy reescribiendo para forzar el estilo
 .h4 {
     font-size: calc(1.275rem + 0.3vw);
+}
+
+.area {
+    cursor: default;
 }
