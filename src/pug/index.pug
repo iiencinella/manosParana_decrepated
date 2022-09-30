@@ -31,7 +31,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container.px-4.px-lg-5
                 a.navbar-brand(href='#page-top')
-                    img.logo(type='image/svg', src='assets/logo.svg', width='100px')
+                    img.logo(type='image/svg', src='assets/logo.svg', alt='logo')
                     | Manos a la Obra Paraná
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
@@ -81,13 +81,13 @@ html(lang='en')
                             .mb-2
                                 i.bi.bi-book.fs-1.text-primary
                             h3.h4.mb-2 Educación
-                            p.text-muted.mb-0 Trabajamos con los niños y adolescentes para reforzar algunos conceptos aprendidos en clases.
+                            p.text-muted.mb-0.description Trabajamos con los niños y adolescentes para reforzar algunos conceptos aprendidos en clases.
                     .col-lg-6.col-md-6.text-center
                         .mt-5
                             .mb-2
                                 i.bi.bi-heart.fs-1.text-primary
                             h3.h4.mb-2 Salud
-                            p.text-muted.mb-0 Trabajamos con la comunidad para mejorar cuidados en la salud e higiene personal.
+                            p.text-muted.mb-0.description Trabajamos con la comunidad para mejorar cuidados en la salud e higiene personal.
                 .col-lg-12.col-md-6.text-center
                     .mt-5
                         .mb-2
@@ -219,26 +219,38 @@ html(lang='en')
             section
                 .container
                     .row
-                        .col-lg-4.col-md-6.text-center
+                        .col-lg-3.col-md-3.text-center
                             .mt-5
                                 .mb-2
                                     a.btn.btn-primary.rounded-circle(href='https://www.instagram.com/manos_parana/', target='_blank')
                                         i.bi.bi-instagram.fs-1.icon-xl
                                     p Síguenos
                                         i.bi.bi-person-check
-                        .col-lg-4.col-md-6.text-center
+                        .col-lg-3.col-md-3.text-center
                             .mt-5
                                 .mb-2
                                     a.btn.btn-primary.rounded-circle(href='https://www.facebook.com/manosalaobrapna/', target='_blank')
                                         i.bi.bi-facebook.fs-1.icon-xl
                                     p Dale un "Me gusta"
                                         i.bi.bi-hand-thumbs-up
-                        .col-lg-4.col-md-6.text-center
+                        .col-lg-3.col-md-3.text-center
+                            .mt-5
+                                .mb-2
+                                    a.btn.btn-primary.rounded-circle(href='https://chat.whatsapp.com/DR0oFazMTiZDldZzbbpwp3', target='_blank')
+                                        i.bi.bi-whatsapp.fs-1.icon-xl
+                                    p Únete a nuestro grupo de Whatsapp
+                        .col-lg-3.col-md-3.text-center
+                            .mt-5
+                                .mb-2
+                                    a.btn.btn-primary.rounded-circle(href='https://www.youtube.com/channel/UCJkwwCKdnS9Uey0KIC8x6iA/featured', target='_blank')
+                                        i.bi.bi-youtube.fs-1.icon-xl
+                                    p Suscríbete a nuestro canal
+                        .col-lg-12.col-md-12.text-center
                             .mt-5
                                 .mb-2
                                     a.btn.btn-primary.rounded-circle(href='mailto:Manosparana@gmail.com')
                                         i.bi.bi-envelope.fs-1.icon-xl
-                                    p Envíar un correo
+                                    p Envíanos un correo
 
         // Footer
         footer.bg-light.py-5

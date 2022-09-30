@@ -19,6 +19,7 @@ body {
 
 .logo {
     filter: drop-shadow(0 0 5px $white);
+    width:100px;
 }
 
 //- Page section styling
@@ -31,7 +32,7 @@ body {
     color: fade-out($white, 0.25) !important;
 }
 
-p {
+p.description {
     font-family: $font-family-sans-serif-paragraph;
 }
 
