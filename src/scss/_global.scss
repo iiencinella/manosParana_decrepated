@@ -19,7 +19,7 @@ body {
 
 .logo {
     filter: drop-shadow(0 0 5px $white);
-    width:100px;
+    width: 100px;
 }
 
 //- Page section styling
@@ -33,7 +33,7 @@ body {
 }
 
 p.description {
-    font-family: $font-family-sans-serif-paragraph;
+    font-family: $font-family-base;
 }
 
 .tooltip {

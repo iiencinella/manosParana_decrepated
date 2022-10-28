@@ -1,5 +1,5 @@
 export const sendEmail = (inscription) => {
-  const serviceID = 'service_jtht89i';
+  const serviceID = 'service_wap2fjs';
   const templateID = 'template_zbdmmij';
   const publicKey = '2x0C3LS4oCHYmuG8S'
 

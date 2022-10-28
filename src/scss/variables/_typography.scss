@@ -2,33 +2,18 @@
 // Typography
 // 
 
-@font-face {
-    font-family: 'Berlin Sans FB Demi Bold';
-    font-style: normal;
-    src: local('Berlin Sans FB Demi Bold'), url('assets/font/Berlin_Sans/BRLNSDB.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Wendy+One&family=Marcellus&display=swap');
 
-@font-face {
-    font-family: 'Inter Tight';
-    src: local(Inter Tight), urL('assets/font/Inter_Tight/InterTight-ExtraBold.ttf') format('ttf');
-}
+$font-family-sans-serif: "Wendy One", sans-serif;
 
-$font-family-sans-serif: "Berlin Sans FB Demi Bold", "Merriweather Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-button: "Acme", sans-serif;
 
-$font-family-sans-serif-paragraph: "Inter Tight", "Merriweather Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: "Marcellus", serif;
 
-$font-family-serif: "Merriweather", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-$font-family-base: $font-family-sans-serif;
+$font-family-base: $font-family-serif;
 
 $headings-font-family: $font-family-sans-serif;
 
-$btn-font-family: $font-family-sans-serif;
+$btn-font-family: $font-family-button;
 
 $font-weight-bold: 400;
