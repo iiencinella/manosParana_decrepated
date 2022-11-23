@@ -10,7 +10,9 @@ export const sendEmail = (inscription) => {
     from_email: inscription.email,
     from_name: inscription.name,
     from_phone: inscription.phone,
-    from_description: inscription.whois
+    from_description: inscription.whois,
+    from_project: inscription.project,
+    from_area: inscription.area
   }
   
   emailjs.send(serviceID, templateID, data)

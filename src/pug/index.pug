@@ -201,6 +201,23 @@ html(lang='en')
                                 .invalid-feedback(data-sb-feedback='description:required')
                                     | Decir quien sos es muy importante para nosotros, asi podremos agregarte a un proyecto.
 
+                            // Selected work project
+                            .form-cloating.mb-3
+                                label(for='workproject') ¿En qué proyecto quieres dar tu mano?
+                                select#workproject.form-control
+                                    option(value='Educación') Educación
+                                    option(value='Salud') Salud
+
+                            // Selected work area
+                            .form-cloating.mb-3
+                                label(for='workarea') ¿En qué área te gustaría trabajar?
+                                select#workarea.form-control
+                                    option(value='Recursos') Recursos
+                                    option(value='Infraestructura') Infraestructura
+                                    option(value='Formación y Espiritualidad') Formación y Espiritualidad
+                                    option(value='Difusión') Difusión
+                                    option(value='Inscripción y Recepción') Inscripción y Recepción
+
                             // Submit success message
                             //
                             // This is what your users will see when the form

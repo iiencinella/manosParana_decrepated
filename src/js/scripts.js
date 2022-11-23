@@ -64,6 +64,8 @@ form.addEventListener('submit', (e) => {
     const email = document.getElementById('email')
     const phone = document.getElementById('phone')
     const description = document.getElementById('description')
+    const workproject = document.getElementById('workproject')
+    const workarea = document.getElementById('workarea');
     const messageSucces = document.getElementById('submitSuccessMessage')
     const messageError = document.getElementById('submitErrorMessage')
 
@@ -71,7 +73,9 @@ form.addEventListener('submit', (e) => {
         name: name.value,
         email: email.value,
         phone: phone.value,
-        whois: description.value
+        whois: description.value,
+        project: workproject.value,
+        area: workarea.value
     }
 
     if(inscription.name != "" && inscription.email != "" && inscription.phone != "" && inscription.whois != "") {
